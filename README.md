@@ -1,20 +1,39 @@
-# Soccer_team
-**Object-Oriented Design:** Demonstrated proficiency in designing and implementing classes (`SoccerTeam`, `Player`, and `Coach`) using object-oriented principles such as encapsulation, inheritance, and polymorphism.
+# Soccer Team Management System
 
-**Constructor Variations:** Successfully created multiple constructors for the `SoccerTeam` and `Player` classes, including default, overloaded, and copy constructors, allowing for versatile object creation and deep copying of object attributes.
+## Overview
 
-**Static Factory Methods:** Implemented static factory methods in `SoccerTeam`, `Player`, and `Coach` classes, providing alternative ways to instantiate objects and ensuring consistent object creation across the codebase.
+The Soccer Team Management System is a Java application designed to manage soccer teams, including players and coaches. It allows for the creation of teams, addition and removal of players, and assignment of coaches. The system ensures data integrity by implementing deep copying techniques for player and coach objects.
 
-**Deep Copying:** Implemented deep copying techniques within setters and copy constructors, ensuring the integrity of object attributes while avoiding unintended modifications due to reference sharing.
+## Features
 
- **Encapsulation:** Maintained data integrity by encapsulating class attributes and providing appropriate getter and setter methods, enforcing controlled access to class attributes.
+- Creation of soccer teams with up to 11 players.
+- Addition and removal of players from teams.
+- Assignment of coaches to teams.
+- Implementation of deep copying for player and coach objects to maintain data integrity.
+- Singleton pattern used for coaches to ensure only one instance exists in the system.
 
-**Singleton Pattern:** Employed the Singleton pattern for the `Coach` class using a static method (`getInstance()`) to ensure a single instance of the coach exists within the application.
+## Code Structure
 
-**Code Reusability:** Utilized methods such as `getPlayers()`, `getCoach()`, `setPlayers()`, `setCoach()`, `getName()`, `getYearsExp()`, `getLevel()`, etc., to access and modify class attributes, promoting code reusability and readability.
+The project consists of the following classes:
 
-**Documentation:** Maintained clear and concise documentation through Javadoc comments, facilitating understanding and usage of the implemented classes and methods by other developers.
+- `SoccerTeam`: Represents a soccer team, containing an array of players and a coach.
+- `Player`: Represents a player with attributes such as name, number, and role.
+- `Coach`: Represents a coach with attributes including name, years of experience, and expertise level.
 
-**Exception Handling:** Implemented exception handling techniques where appropriate, ensuring robustness and reliability of the code by handling potential errors during object instantiation and attribute manipulation.
+## Installation
 
-**Role Representation:** Utilized specific character representations ('d', 'c', 's', 'g') to define player roles, enhancing code readability and facilitating role-based functionalities within the soccer team structure.
+To use the Soccer Team Management System, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Open the project in your preferred Java IDE.
+3. Compile the code.
+4. Run the application.
+
+## Usage
+
+Below are some examples of how to use the Soccer Team Management System:
+
+1. Create a new soccer team:
+
+```java
+SoccerTeam team = SoccerTeam.getInstance();
